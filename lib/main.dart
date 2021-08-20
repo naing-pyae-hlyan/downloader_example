@@ -1,23 +1,24 @@
-import 'package:awesome_notifications/awesome_notifications.dart';
+// import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:file_downloader/ui/download_page.dart';
+import 'package:file_downloader/ui/list_download_page.dart';
 
 import 'lib.dart';
 
 ///https://medium.com/@michallot/how-to-write-a-simple-downloading-app-with-flutter-2f55ae516867
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  AwesomeNotifications().initialize(null, [
-    NotificationChannel(
-      channelKey: 'key1',
-      channelName: 'Proto Coders Point',
-      channelDescription: "Notification example",
-      defaultColor: Color(0XFF9050DD),
-      ledColor: Colors.white,
-      playSound: true,
-      enableLights: true,
-      enableVibration: true,
-    )
-  ]);
+  // AwesomeNotifications().initialize(null, [
+  //   NotificationChannel(
+  //     channelKey: 'key1',
+  //     channelName: 'Proto Coders Point',
+  //     channelDescription: "Notification example",
+  //     defaultColor: Color(0XFF9050DD),
+  //     ledColor: Colors.white,
+  //     playSound: true,
+  //     enableLights: true,
+  //     enableVibration: true,
+  //   )
+  // ]);
   runApp(MyApp());
 }
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DownloadPage(),
+      home: BaseListDownloadPage(),
     );
   }
 }
