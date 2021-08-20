@@ -2,14 +2,14 @@ import '../lib.dart';
 import 'package:dio/dio.dart';
 import 'package:path/path.dart' as path;
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class LocalNotificationDownloadPage extends StatefulWidget {
+  const LocalNotificationDownloadPage({Key? key}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _LocalNotificationDownloadPageState createState() => _LocalNotificationDownloadPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _LocalNotificationDownloadPageState extends State<LocalNotificationDownloadPage> {
   final String _fileUrl =
       'https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg';
   final String _fileName = 'codecode.jpg';

@@ -6,14 +6,14 @@ import 'package:awesome_notifications/awesome_notifications.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-class DownloadPage extends StatefulWidget {
-  const DownloadPage({Key? key}) : super(key: key);
+class AwesomeNotificatonDownloadPage extends StatefulWidget {
+  const AwesomeNotificatonDownloadPage({Key? key}) : super(key: key);
 
   @override
-  _DownloadPageState createState() => _DownloadPageState();
+  _AwesomeNotificatonDownloadPageState createState() => _AwesomeNotificatonDownloadPageState();
 }
 
-class _DownloadPageState extends State<DownloadPage> {
+class _AwesomeNotificatonDownloadPageState extends State<AwesomeNotificatonDownloadPage> {
   final String _fileUrl =
       'https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg';
   final String _fileName = 'codecode.jpg';
